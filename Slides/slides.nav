@@ -1,0 +1,117 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\sectionentry {1}{Welcome}{2}{Welcome}{0}}
+\headcommand {\slideentry {1}{0}{1}{2/3}{}{0}}
+\headcommand {\beamer@framepages {2}{3}}
+\headcommand {\beamer@sectionpages {2}{3}}
+\headcommand {\beamer@subsectionpages {2}{3}}
+\headcommand {\sectionentry {2}{Some preliminaries}{4}{Some preliminaries}{0}}
+\headcommand {\beamer@subsectionpages {4}{3}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{The historical way}}
+\headcommand {\slideentry {2}{1}{1}{4/4}{The historical way}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {2}{1}{2}{5/5}{The historical way}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {2}{1}{3}{6/6}{The historical way}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {2}{1}{4}{7/7}{The historical way}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {2}{1}{5}{8/11}{The historical way}{0}}
+\headcommand {\beamer@framepages {8}{11}}
+\headcommand {\beamer@sectionpages {4}{11}}
+\headcommand {\beamer@subsectionpages {4}{11}}
+\headcommand {\sectionentry {3}{ML}{12}{ML}{0}}
+\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{12}{ML Branches}}
+\headcommand {\slideentry {3}{1}{1}{12/12}{ML Branches}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\slideentry {3}{1}{2}{13/13}{ML Branches}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {3}{1}{3}{14/14}{ML Branches}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {3}{1}{4}{15/15}{ML Branches}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\beamer@subsectionpages {12}{15}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{16}{ML algorithms}}
+\headcommand {\slideentry {3}{2}{1}{16/17}{ML algorithms}{0}}
+\headcommand {\beamer@framepages {16}{17}}
+\headcommand {\beamer@subsectionpages {16}{17}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{18}{Fields of ML}}
+\headcommand {\slideentry {3}{3}{1}{18/22}{Fields of ML}{0}}
+\headcommand {\beamer@framepages {18}{22}}
+\headcommand {\slideentry {3}{3}{2}{23/23}{Fields of ML}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@subsectionpages {18}{23}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{24}{Neural Networks achitectures}}
+\headcommand {\slideentry {3}{4}{1}{24/24}{Neural Networks achitectures}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@sectionpages {12}{24}}
+\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\sectionentry {4}{PVE}{25}{PVE}{0}}
+\headcommand {\beamer@subsectionpages {25}{24}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{25}{Motivation}}
+\headcommand {\slideentry {4}{1}{1}{25/31}{Motivation}{0}}
+\headcommand {\beamer@framepages {25}{31}}
+\headcommand {\slideentry {4}{1}{2}{32/38}{Motivation}{0}}
+\headcommand {\beamer@framepages {32}{38}}
+\headcommand {\slideentry {4}{1}{3}{39/44}{Motivation}{0}}
+\headcommand {\beamer@framepages {39}{44}}
+\headcommand {\beamer@sectionpages {25}{44}}
+\headcommand {\beamer@subsectionpages {25}{44}}
+\headcommand {\sectionentry {5}{Reproducibility of training}{45}{Reproducibility of training}{0}}
+\headcommand {\beamer@subsectionpages {45}{44}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{45}{Motivation}}
+\headcommand {\slideentry {5}{1}{1}{45/49}{Motivation}{0}}
+\headcommand {\beamer@framepages {45}{49}}
+\headcommand {\beamer@subsectionpages {45}{49}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{50}{Practical work with tensorflow}}
+\headcommand {\slideentry {5}{2}{1}{50/53}{Practical work with tensorflow}{0}}
+\headcommand {\beamer@framepages {50}{53}}
+\headcommand {\beamer@subsectionpages {50}{53}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{54}{References}}
+\headcommand {\slideentry {5}{3}{1}{54/54}{References}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\beamer@sectionpages {45}{54}}
+\headcommand {\beamer@subsectionpages {54}{54}}
+\headcommand {\sectionentry {6}{Appendices}{55}{Appendices}{0}}
+\headcommand {\beamer@subsectionpages {55}{54}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{55}{The artificial neuron}}
+\headcommand {\slideentry {6}{1}{1}{55/55}{The artificial neuron}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\beamer@subsectionpages {55}{55}}
+\headcommand {\beamer@subsectionentry {0}{6}{2}{56}{Activation functions}}
+\headcommand {\slideentry {6}{2}{1}{56/56}{Activation functions}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\beamer@subsectionpages {56}{56}}
+\headcommand {\beamer@subsectionentry {0}{6}{3}{57}{Activation functions SoftMax}}
+\headcommand {\slideentry {6}{3}{1}{57/58}{Activation functions SoftMax}{0}}
+\headcommand {\beamer@framepages {57}{58}}
+\headcommand {\beamer@subsectionpages {57}{58}}
+\headcommand {\beamer@subsectionentry {0}{6}{4}{59}{One-hot coding}}
+\headcommand {\slideentry {6}{4}{1}{59/60}{One-hot coding}{0}}
+\headcommand {\beamer@framepages {59}{60}}
+\headcommand {\slideentry {6}{4}{2}{61/61}{One-hot coding}{0}}
+\headcommand {\beamer@framepages {61}{61}}
+\headcommand {\beamer@subsectionpages {59}{61}}
+\headcommand {\beamer@subsectionentry {0}{6}{5}{62}{Optimisation}}
+\headcommand {\slideentry {6}{5}{1}{62/64}{Optimisation}{0}}
+\headcommand {\beamer@framepages {62}{64}}
+\headcommand {\beamer@subsectionpages {62}{64}}
+\headcommand {\beamer@subsectionentry {0}{6}{6}{65}{Back-propgation algorithm}}
+\headcommand {\slideentry {6}{6}{1}{65/65}{Back-propgation algorithm}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\beamer@subsectionpages {65}{65}}
+\headcommand {\beamer@subsectionentry {0}{6}{7}{66}{Supervised learning}}
+\headcommand {\slideentry {6}{7}{1}{66/66}{Supervised learning}{0}}
+\headcommand {\beamer@framepages {66}{66}}
+\headcommand {\beamer@subsectionpages {66}{66}}
+\headcommand {\beamer@subsectionentry {0}{6}{8}{67}{Supervised learning}}
+\headcommand {\slideentry {6}{8}{1}{67/67}{Supervised learning}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\beamer@partpages {1}{67}}
+\headcommand {\beamer@subsectionpages {67}{67}}
+\headcommand {\beamer@sectionpages {55}{67}}
+\headcommand {\beamer@documentpages {67}}
+\headcommand {\gdef \inserttotalframenumber {30}}

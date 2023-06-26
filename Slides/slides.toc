@@ -1,0 +1,23 @@
+\beamer@sectionintoc {1}{Welcome}{2}{0}{1}
+\beamer@sectionintoc {2}{Some preliminaries}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{The historical way}{4}{0}{2}
+\beamer@sectionintoc {3}{ML}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{ML Branches}{12}{0}{3}
+\beamer@subsectionintoc {3}{2}{ML algorithms}{16}{0}{3}
+\beamer@subsectionintoc {3}{3}{Fields of ML}{18}{0}{3}
+\beamer@subsectionintoc {3}{4}{Neural Networks achitectures}{24}{0}{3}
+\beamer@sectionintoc {4}{PVE}{25}{0}{4}
+\beamer@subsectionintoc {4}{1}{Motivation}{25}{0}{4}
+\beamer@sectionintoc {5}{Reproducibility of training}{45}{0}{5}
+\beamer@subsectionintoc {5}{1}{Motivation}{45}{0}{5}
+\beamer@subsectionintoc {5}{2}{Practical work with tensorflow}{50}{0}{5}
+\beamer@subsectionintoc {5}{3}{References}{54}{0}{5}
+\beamer@sectionintoc {6}{Appendices}{55}{0}{6}
+\beamer@subsectionintoc {6}{1}{The artificial neuron}{55}{0}{6}
+\beamer@subsectionintoc {6}{2}{Activation functions}{56}{0}{6}
+\beamer@subsectionintoc {6}{3}{Activation functions SoftMax}{57}{0}{6}
+\beamer@subsectionintoc {6}{4}{One-hot coding}{59}{0}{6}
+\beamer@subsectionintoc {6}{5}{Optimisation}{62}{0}{6}
+\beamer@subsectionintoc {6}{6}{Back-propgation algorithm}{65}{0}{6}
+\beamer@subsectionintoc {6}{7}{Supervised learning}{66}{0}{6}
+\beamer@subsectionintoc {6}{8}{Supervised learning}{67}{0}{6}

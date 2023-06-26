@@ -1,0 +1,992 @@
+\documentclass[10pt,serif,mathserif,compress,hyperref={colorlinks}]{beamer}
+%\mode<presentation>
+\usepackage{pgf}
+\usepackage{pgfpages}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{lmodern}
+\usepackage{lastpage}
+\usepackage{comment}
+\usepackage{geometry}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{skins}
+\usepackage{beamerthemesplit}
+\usepackage{amsmath, amsfonts, epsfig, xspace}
+\usepackage{pstricks,pst-node}
+\usepackage{multimedia}
+\usepackage{pifont}   % zapf dingbats
+\usepackage{marvosym} % MarVoSym dingbats
+\usepackage{wasysym}
+\usepackage{animate}
+
+\usepackage{graphicx}% for including figures
+\usepackage{tikz}
+\usepackage[tikz]{bclogo}
+\usetikzlibrary{positioning,decorations.pathreplacing,arrows}
+\usepackage{tikzsymbols}
+\setlength{\parindent}{0pt}
+
+\input{colors}
+\input{commands}
+
+\usetheme{jlcKeynote}
+\useoutertheme[subsection=false]{miniframes}
+\setbeamercolor{background canvas}{bg=gray!50!white}
+\setbeamercolor{structure}{bg=white, fg=gray}
+\setbeamertemplate{itemize item}{\small\gray{$\CIRCLE$}}
+\setbeamertemplate{itemize subitem}{\tiny\gray{$\CIRCLE$}}
+\settowidth{\leftmargini}{\usebeamertemplate{itemize item}}
+\addtolength{\leftmargini}{\labelsep}
+
+\setbeamercovered{transparent}
+
+\hypersetup{linkcolor=Yellow}
+\hypersetup{citecolor=DeepPink4}
+\hypersetup{urlcolor=DarkBlue}
+\hypersetup{anchorcolor=Magenta}
+
+%=============================== 1 ================================================
+
+\title[\hspace*{.8\linewidth}\insertframenumber/\inserttotalframenumber]
+      {\fontsize{20}{20}\selectfont{\textbf{Café IA}\\[3mm]
+      {Feedback on Machine Learning}} \\\fontsize{15}{15}\selectfont{[Reproducibility of trainings]}\\[6mm]
+      \fontsize{12}{12}\selectfont{\textbf{I2M} / Groupe de Travail - IA / June 26, 2023}
+}
+
+\subtitle{}
+
+\author[{\tiny JLC -- 26 juin 2023 -- V0.1}\hspace*{.8\linewidth}]
+       {\fontsize{10}{10}\selectfont{Jean-Luc.Charles\,@\,ENSAM.EU}\\[3mm]
+         \includegraphics[height=.8cm]{images/logo-am-couleur-72dpi.jpg}
+         \includegraphics[height=.8cm]{images/logo_i2m_institut_de_mcanique_et_d_ingnierie.png}}
+
+\institute{}
+
+\date{}
+\titlegraphic{
+  \href{https://creativecommons.org/licenses/by-sa/4.0/}
+       {\includegraphics[height=5mm]{images/CC-BY-SA.jpeg}}     
+}
+
+\logo{}
+\tcbset{enhanced, boxrule=0.2pt, sharp corners, drop lifted shadow=black, colback=Chocolate!25!white,colframe=Chocolate!75!black, fonttitle=\Large}
+
+\begin{document}
+
+\renewcommand{\ttdefault}[0]{lmtt}
+\newcommand{\boldtt}[1]{{\ttfamily\bfseries #1}}
+
+\frame[plain]{\titlepage}
+
+\setbeamercolor{structure}{fg=gray!50!white}
+
+\section{Welcome}
+
+%=============================== 2 ================================================
+\begin{frame}{Feedback on Machine Learning}
+  
+  %\vspace*{-3mm}%
+  \begin {bclogo}[noborder=true, couleur=gray!50, couleurBarre=Chocolate, logo=\bctrombone, marge=0, margeG=-0.5]
+    {\ Some points of interest}
+    \medskip
+    \begin{itemize}
+    \item {[}{\it If needed}...{]} Preliminaries: the historical way...
+    \item \Chocolate{Unsupervised} / \Chocolate{Supervised} / \Chocolate{Reinforcement} learning
+    \item Use a \Chocolate{Virtual Python Environment} (PVE) to work on ML...
+    \item \Chocolate{The repeatability of trainings}: the key to compare trainings.
+    \end{itemize}
+  \end{bclogo}
+  
+  \visible<2->{
+    \begin {bclogo}[noborder=true, couleur=gray!50, couleurBarre=Chocolate, logo=\bctrombone, margeG=-0.5]
+      {\ My profile}
+    \medskip
+      \begin{itemize}
+      \item I'm teaching Python programming (Scientific \& Object Oriented)
+      \item I started to get interested in ML in 2015
+      \item I wrote several materials in ML : workshop, project \& practical work
+        for different shools (ENSAM, ENSEIRB, ENSPIMA, PPU...)
+      \end{itemize}
+    \end{bclogo}
+  }
+
+\end{frame}
+%===============================================================================
+
+\section{Some preliminaries}
+
+\subsection{The historical way}
+
+%================================ 3 ============================================
+\begin{frame}{The historical way...}
+  \hspace*{-2mm}from: \href{https://medium.com/analytics-vidhya/brief-history-of-neural-networks-44c2bf72eec}
+    {Kate Strachni: "Brief History of Neural Netowrks", medium.com}\\[1mm]
+  \hspace*{-8mm}\includegraphics[width=1.15\textwidth]{images/Brief History of NN - Kate Strachnyi.png}
+\end{frame}
+%===============================================================================
+
+%================================ 4 ============================================
+\begin{frame}{The historical way...}
+  \hspace*{-2mm}from: \href{https://pub.towardsai.net/a-brief-history-of-neural-nets-472107bc2c9c}
+    {Pumalin: "A Brief History of Neural Nets", medium.com}\\[1mm]
+  \hspace*{-8mm}\includegraphics[width=1.15\textwidth]{images/A brief History of NN - Pumalin.png}
+\end{frame}
+%===============================================================================
+
+%================================ 5 ============================================
+\begin{frame}{The historical way...}
+  \hspace*{-2mm}from: \href{https://towardsdatascience.com/ten-years-of-ai-in-review-85decdb2a540}
+    {Thomas A Dorfe: "Ten Years of AI in Review", medium.com}\\[1mm]
+  \hspace*{-6mm}\includegraphics[width=1.1\textwidth]{images/Ten Years of AI in Review.png}
+\end{frame}
+%===============================================================================
+
+%================================ 6 ============================================
+\begin{frame}{Artificial Intelligence ?}
+
+  \vspace*{-1mm}
+  \begin {bclogo}[noborder=true, couleur=gray!50, couleurBarre=Chocolate, logo=\bctrombone, margeG=-0.5]
+    {}
+    \vspace*{-5mm}
+    Historically\footnote{{\tiny first used in 1956 by \href{https://en.wikipedia.org/wiki/John\_McCarthy\_\%28computer\_scientist\%29}{John McCarthy},
+    researcher at Stanford during the Dartmouth conference}} {\it badly chosen} term\\
+    Ambiguous current meaning\\
+    Many (contradictory) definitions depending on periods and authors...
+    \end{bclogo}
+  \medskip
+  \begin{itemize}
+    {\small
+    \item {\em ''...the science of making computers do things that require intelligence when done by humans.}''
+      {\tiny \href{http://www.alanturing.net/turing\_archive/pages/reference\%20articles/what\%20is\%20ai.html}{Alan Turing, 1940}}
+      
+    \item {\em ''the field of study that gives computers the ability to learn without being explicitly programmed.''}
+      {\tiny  \href{http://infolab.stanford.edu/pub/voy/museum/samuel.html}{Arthur Samuel, 1960}}
+      
+    \item {\em ''A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P,
+      if its performance at tasks in T, as measured by P, improves with experience E.''}
+      {\tiny \href{https://www.cs.cmu.edu/~tom/}{Tom Mitchell, 1997}}
+      
+    \item Notion of {\em intelligent agent} or {\em rational agent}\\
+      {\em ''...agent that acts in such a way as to
+        reach the best solution or, in an uncertain environment, the best predictable solution.}''\\
+      {\tiny  \hyperlink{refRusselNorvig}{Stuart Russel, Peter Norvig, ``Intelligence Artificielle'' 2015}}
+    }
+  \end{itemize}
+  
+\end{frame}
+%===============================================================================
+
+%================================= 7 ===========================================
+\begin{frame}{Artificial Intelligences ?}
+ 
+  \textbf{Strong AI}
+
+  \visible<2->{%
+    \begin{itemize}
+    \item Build systems that think exactly the same way that people do.
+    \item Try also to explain how humans think... \Chocolate{Whe are not yet here}.
+    \end{itemize}
+  }
+
+  \textbf{Weak AI}
+  
+  \visible<3->{% 
+    \begin{itemize}
+    \item Build systems that can behave like humans.
+    \item The results will tell us nothing about how humans think.
+    \item \Chocolate{We already are there}... We use it every day!\\
+      (anti-spam, facial/voice recognition, language translation...)
+    \end{itemize}
+  }
+
+  \textbf{General AI}
+  \visible<4->{%
+    \begin{itemize}
+    \item AI systems designed for the ability to reason in general.
+    \end{itemize}
+  }
+
+  \textbf{Narrow AI}
+  \visible<4->{%
+    \begin{itemize}
+    \item AI systems designed for specific tasks.
+    \end{itemize}
+  }
+  
+\end{frame}
+%===============================================================================
+
+\section{ML}
+
+\subsection{ML Branches}
+
+%================================== 8 ==========================================
+\begin{frame}{Branches of Machine Learning}
+
+  {\small Page from \href{https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12}
+  {medium.com/machine-learning-for-humans/...}}\\[2mm]
+  
+  \hspace*{-10mm}\includegraphics[width=1.2\textwidth]{images/AI-from_MachineLearningForHumans.png}
+  \vspace*{-8mm}
+  
+\end{frame}
+%===============================================================================
+
+%================================== 9 ==========================================
+\begin{frame}{Branches of Machine Learning}
+
+  %% Excellent: https://www.ibm.com/cloud/learn/machine-learning?lnk=fle
+
+  \begin{tcolorbox}[title=Supervised learning applications]
+    {\bf labeled dataset} is used to train algorithms to classify data:
+    \begin{itemize}
+    \item \textbf{Classification}
+      \begin{itemize}
+      \item Images classification
+      \item Objects detection in images
+      \item Speech recognition...
+      \end{itemize}
+    \item \textbf{Regression}
+      \begin{itemize}
+      \item Predict a value...
+      \end{itemize}
+    \item \textbf{Anomaly detection}
+      %% anomaliy detection with supervised laerning suppose that there are no "new annomaly" in the
+      %% datat set to process, because the anomalies have been learned and the algorithm will not
+      %% recognize new anomaly that was not learned...
+      \begin{itemize}
+      \item Spam detection
+      \item Manufacturing: finding known (learned) defects
+      \item Weather prediction
+      \item Diseases classification...
+      \end{itemize}        
+    \end{itemize}
+    \vspace*{-1mm}$\cdots$
+  \end{tcolorbox}
+  
+\end{frame}
+%===============================================================================
+
+%=================================== 10 ========================================
+\begin{frame}{Branches of Machine Learning}
+  \begin{tcolorbox}[title=Unsupervised learning application]
+    Analyze and cluster \textbf{unlabeled datasets}:
+    \begin{itemize}
+    \item \textbf{Clustering} \& \textbf{Grouping} 
+      \begin{itemize}
+      \item Data mining, web data grouping, news grouping...
+      \item Market segmentation
+      \item Astronomical data analysis...
+      \end{itemize}        
+    \item \textbf{Anomaly Detection}
+      \begin{itemize}
+      \item Fraud detecion
+      \item Manufacturing: finding defects even new ones
+      \item Monitoring abnormal activity: failure, hacker, fraud...
+      \item Fake account on Internet...
+      \end{itemize}
+    \item \textbf{Dimensionality reduction}
+      \begin{itemize}
+      \item Compress data using fewer numbers...
+      \end{itemize}
+    \end{itemize}
+    \vspace*{-1mm}$\cdots$
+  \end{tcolorbox}    
+\end{frame}
+%===============================================================================
+
+%=================================== 11 ========================================
+\begin{frame}{Branches of Machine Learning}  
+  \begin{tcolorbox}[title=Reinforcement learning]
+    An agent learns how to drive an environment by maximising a \textbf{reward}:
+    \begin{itemize}
+
+    \item \textbf{Control/command}
+      \begin{itemize}
+      \item Controlling robots, drones...
+      \item Factory optimization
+      \item Financial (stock) trading...
+      \end{itemize}        
+    \item \textbf{Decision making}
+      \begin{itemize}
+      \item games (video games)
+      \item financial analysis...
+      \end{itemize}
+    \end{itemize}
+    \vspace*{-1mm}$\cdots$
+  \end{tcolorbox}    
+\end{frame}
+%===============================================================================
+
+\subsection{ML algorithms}
+
+%=================================== 12 ========================================
+\begin{frame}{}
+
+  %See \href{https://www.ibm.com/cloud/learn/machine-learning}{www.ibm.com/cloud/learn/machine-learning}
+  
+  \begin{tcolorbox}[title=Various approaches for ML algorithms]
+    {\small
+      \begin{minipage}[t]{.55\textwidth}
+        \bfdarkchoco{Supervised learning:}
+        \begin{itemize}
+        \item<1-> \only<1>{\Blue{Neural Networks}}\only<2>{\Blue{\bf Neural Networks}}
+        \item<1> Bayesian inference
+        \item<1> Random forest
+        \item<1> Decision Tree
+        \item<1> Support Vector Machine (SVM)
+        \item<1> K-Nearest Neighbor
+        \item<1> Linear regression
+        \item<1> Logistic regression...
+        \end{itemize}
+      \end{minipage}\begin{minipage}[t]{.55\textwidth}
+        \bfdarkchoco{Unsupervised learning:}
+        \begin{itemize}
+        \item<1-> \only<1>{\Blue{Neural Networks}}\only<2>{\Blue{\bf Neural Networks}}
+        \item<1> Principal Composant Analysis
+        \item<1> Singular Value Decomposition
+        \item<1> K-mean \& Prob. clustering...
+        \end{itemize}
+        \medskip
+        \bfdarkchoco{Reinforcement learning:}
+        \begin{itemize}
+        \item<1-> \only<1>{\Blue{Neural Networks}}\only<2>{\Blue{\bf Neural Networks}}(Q-learning, Actor-Critic, DDPG, PPO...)
+        \item<1> Monte Carlo
+        \item<1> SARSA
+        \end{itemize}
+        
+      \end{minipage}
+    }
+  \end{tcolorbox}    
+  \visible<2->{The following deals only with \Blue{\bf Artificial Neural Networks}.}
+\end{frame}
+%===============================================================================
+
+\subsection{Fields of ML}
+
+%=================================== 13 ========================================
+\begin{frame}{Fields of ML}
+
+  \begin{tcolorbox}[height=6cm, add to width=.7cm, title=Computer Vision]
+    \begin{minipage}[t][][t]{.6\textwidth}
+      \begin{itemize}
+      \item<1-> Image Classification
+      \item<2-> Object Detection 
+      \item<3-> (Semantic) Segmentation
+      \item<4-> Image Generation\\
+        {\small \href{https://www.leptidigital.fr/productivite/meilleurs-generateurs-images-ia-30857/}{Les 10 Meilleurs Générateurs d’Images}}
+      \item<5-> Pose Estimation
+      \item<5-> ...
+      \end{itemize}
+    \end{minipage}\begin{minipage}[t][][b]{.4\textwidth}
+      \only<1>{\includegraphics[width=1.\textwidth]{images/image_classification_sunflowers.png}}
+      \only<2>{\includegraphics[width=1.\textwidth]{images/object_detection_aple-banana.png}\\[-2mm]
+        {\centerline{\tiny Image credit: \href{https://www.tensorflow.org/lite/examples/object_detection/overview}{Tensorflow}}}}
+      \only<3>{\includegraphics[width=1.\textwidth]{images/image_segmentation_Detectron.png}}
+      \only<4>{\includegraphics[width=1.\textwidth]{images/image_generation.png}\\[-2mm]
+        {\centerline{\tiny Image credit: \href{https://github.com/NVlabs/stylegan}{stylegan}}}}
+      \only<5>{\includegraphics[width=1.\textwidth]{images/pose_estimation_TF.png}\\[-2mm]
+        {\centerline{\tiny Image credit: \href{https://www.tensorflow.org/lite/examples/pose_estimation/overview}{Tensorflow-Pose Estimation}}}}
+    \end{minipage}
+  \end{tcolorbox}
+  
+\end{frame}
+%===============================================================================
+
+%=================================== 14 ========================================
+\begin{frame}{Fields of ML}
+
+  \begin{tcolorbox}[title=Natural Language Processing: NLP]
+    \begin{itemize}
+    \item<1-> Natural Language Understanding (NLU) 
+    \item<1-> Natural Language Generation (NLG)
+    \item<1-> Speech recognition / Speech Synthesis (Text To Speech)
+    \item<1-> Machine Translation
+    \item<1-> Virtual agents and ChatBots
+    \item<1-> Optical character recognition (OCR)
+    \item<1-> ...
+    \end{itemize}
+  \end{tcolorbox}   
+  
+\end{frame}
+%===============================================================================
+
+\subsection{Neural Networks achitectures}
+
+%Physics-Informed Machine Learning Models
+
+%=================================== 15 ==========================================
+\begin{frame}{Neural Network Architectures}
+
+Common NN architectures:
+\begin{itemize}
+  \item \bfdarkchoco{Feed Forward}: the simplest NN made of successive layers of neurones, with {\em Feed Forward} and {\em Back Propagation} algorithms.
+  \item \bfdarkchoco{Convolutional} (CNN): Mostly used for analyzing and classifying images.
+  \item \bfdarkchoco{Recurrent} (RNN): Used to learn from time series, like the Long Short-Term Memory (LSTM) algorithm.
+  \item \bfdarkchoco{Transformers} : Recently used for Natural Language Processing and then for image classification.
+  \item \bfdarkchoco{Auto Encoder} (AEN): Dimensionality reduction, Feature extraction, Denoising of data/images, Imputing missing data.
+  \item \bfdarkchoco{Generative Adversarial} (GAN): to generate text, images, music...
+\end{itemize}
+Graphical chart: \href{https://chart-studio.plotly.com/~SolClover/90.embed?autosize=true&referrer=https\%3A\%2F\%2Ftowardsdatascience.com\%2F}{from Saul Dobilas on Medium} 
+\end{frame}
+%===============================================================================
+
+\section{PVE}
+
+\subsection{Motivation}
+
+%=================================== 13 ========================================
+\begin{frame}{The need for PVE (Python Virtual Environment) to program NN training with Python}
+
+  \visible<2->{
+  \begin{tcolorbox}[title=Advantages]
+    \begin{itemize}
+    \item <2-> Dedicated environment (disk tree) with fixed version of the Python interpreter and modules
+    \item <3-> Easy to create and destroy if needed
+    \item <4-> Each Python project can have its own PVE \\
+      \visible<5->{
+        $\leadsto$ you can load/update modules for a project without breaking other projects
+        }
+    \item <6->  PVEs protect your projects against operating system updates or hazardous manipulations...
+    \end{itemize}
+  \end{tcolorbox}
+  }
+  \visible<7->{
+    \bigskip
+  \begin{tcolorbox}[title=Disadvantages]
+    \begin{itemize}
+    \item <7-> ? (just do it)
+    \end{itemize}
+  \end{tcolorbox}
+  }
+
+\end{frame}
+%===============================================================================
+
+%=================================== 14 ========================================
+\begin{frame}{PVE: simple to create \& use}
+  
+  \begin{tcolorbox}[title=with {\bf conda}]
+    \begin{itemize}
+    \item <1-> Download \& install \href{https://docs.conda.io/en/latest/miniconda.html}{miniconda}
+    \item <2-> \command{conda create -n pyml python=3.8} $\leadsto$ {\small creates the \DarkRed{\boldtt{pyml}} PVE }
+    \item <3-> \command{conda activate pyml} $\leadsto$ {\small activates the \DarkRed{\boldtt{pyml}} PVE }
+    \item <4-> \command{conda install <module>} $\leadsto$ {\small installs a module}\\
+      \command{pip install <module>}       
+    \end{itemize}
+  \end{tcolorbox}    
+
+  \visible<5->{
+  \begin{tcolorbox}[title=advantages / disadvantages]
+    \visible<5->{\dSmiley[1.][green!60!white] The version of Python in a conda PVE can be $\neq$ version of the interpreter that comes with the OS installation\\[1mm]}
+    \visible<6->{\dSmiley[1.][green!60!white] Some modules installed with \Chocolate{conda} can be more performant (numpy with MKL)\\}
+    \visible<7->{\dSadey[1.][red!60!white] \Chocolate{conda install} and \Chocolate{pip install} can be conflicting...}
+  \end{tcolorbox}
+  }
+\end{frame}
+%===============================================================================
+
+%=================================== 14 ========================================
+\begin{frame}{PVE: simple to create \& use}
+  
+  \begin{tcolorbox}[title=with Python {\bf env}]
+    
+    \begin{itemize}
+    \item <1-> Install the \href{https://docs.python.org/3/library/venv.html}{venv} Python module
+    \item <2-> \command{python -m venv pyml} $\leadsto$ {\small creates the \DarkRed{\boldtt{pyml}} PVE }
+    \item <3-> \command{./pyml/Scripts/activate} $\leadsto$ {\small activates the \DarkRed{\boldtt{pyml}} PVE }
+    \item <4-> \command{pip install <module>} $\leadsto$ {\small installs a module}
+    \end{itemize}
+    
+  \end{tcolorbox}    
+
+  \visible<5->{
+  \begin{tcolorbox}[title=advantages / disadvantages]
+    \visible<5->{\dSadey[1.][red!60!white] The version of Python for the PVE is the version of the interpreter that comes with the OS installation\\[1mm]}
+    \visible<6->{\dSmiley[1.][green!60!white] No conflict with \Chocolate{conda install}}
+  \end{tcolorbox}
+  }
+\end{frame}
+%===============================================================================
+
+\section{Reproducibility of training}
+
+\subsection{Motivation}
+
+%=================================== nn ========================================
+\begin{frame}{Reproducibility of training}
+  
+  \begin{tcolorbox}[title=Where to find randomness in NN training]
+    
+    \begin{itemize}
+    \item<1-> \bfdarkchoco{Random initialization of the weights} of the network before the training starts.
+    \item<2-> Regularization, e.g. {\bf dropout}, which involves randomly dropping nodes in the network while training.
+    \item<3-> Optimization process like {\bf stochastic gradient descent} or {\bf Adam} also include randomness.
+    \item<4-> Shuffling of data to build batches to train the NN
+    \item<5-> and many others stages in ML algorithms  where random genertaors are used...
+    \end{itemize}
+  \end{tcolorbox}
+    
+\end{frame}
+%===============================================================================
+ 
+\subsection{Practical work with tensorflow}
+
+%=================================== nn ========================================
+\begin{frame}{Reproducibility of training}
+  
+  \begin{tcolorbox}[title=Practical work with tensorflow]
+    
+    \begin{itemize}
+    \item<1-> We will run a \bfdarkchoco{Jupyter notebook} to illustrate the {\it Reproducibility of training} with {\bf tensorflow}.
+    \item<2-> See the PVE usage
+    \item<3-> Create a simple {\it Feed Forward} dense network and train it to classify {\it hand written} images form the MNIST
+    \item<4-> Explore where and how the question of the Reproducibility occurs... and how to solve it \dSmiley[1.][green!60!white]
+    \end{itemize}
+  \end{tcolorbox}
+
+    
+\end{frame}
+%===============================================================================
+ 
+\subsection{References}
+
+%===============================================================================
+\begin{frame}{}
+  
+  \noindent\fontsize{8}{8}\selectfont{
+
+    \hspace*{-4mm}\hypertarget{refRusselNorvig}{[1] }%
+    {\em Artificial Intelligence: A Modern Approach (4th Edition)}, By Stuart Russell \& Peter Norvig. 
+    Pearson, 2020. ISBN 978-0134610993. \href{http://aima.cs.berkeley.edu/}{aima.cs.berkeley.edu}\\[3mm]
+    {\em Intelligence artificielle -- Une approche moderne -- 4e éd.}, By Stuart Russell \& Peter Norvig. 
+    Translated by L. Miclet, F. Popineau, \& C. Cadet. Paris: Pearson Education France, 2021. ISBN 978-2326002210.\\[5mm]
+
+
+    \hspace*{-4mm}\hypertarget{refStrongWeak-AI}{[2] }%
+    {\em What is artificial intelligence (AI), and what is the difference between general AI and narrow AI?}, Kris Hammond, 2015\\
+    \href{https://www.computerworld.com/article/2906336/what-is-artificial-intelligence.html}
+         {www.computerworld.com/article/2906336/what-is-artificial-intelligence.html}\\[5mm]
+
+    \hspace*{-4mm}\hypertarget{StanfordEncyc}{[3] }%
+    {\em Stanford Encyclopedia of Philosophy},
+    \href{https://plato.stanford.edu/entries/artificial-intelligence}
+         {plato.stanford.edu/entries/artificial-intelligence}\\[5mm]
+
+    \hspace*{-4mm}\hypertarget{DeepLeraning}{[4] }%
+    {\em  Deep Learning.}, Goodfellow, Ian; Bengio, Yoshua; Courville, Aaron (2016), MIT Pres, ISBN 9780262035613
+  }
+  
+\end{frame}
+%===============================================================================
+
+\section{Appendices}
+
+\subsection{The artificial neuron}
+
+%===============================================================================
+\begin{frame}{Artificial Neural Networks}
+  
+  \tikzset{%
+  neuron/.style={
+    circle,
+    draw,
+    minimum size=1cm,
+    font=\large
+  },
+  squa/.style={
+    draw,
+    inner sep=2pt,
+    font=\large,
+    join = by -latex
+  },
+  }
+  \begin{tcolorbox}[title=The Artificial neuron model]  
+    \hspace*{-.7cm}
+    \begin{tikzpicture}[x=1.4cm, y=1.cm]
+
+      \node [label=above:\parbox{2cm}{\centering Input\\stimuli}] at (0, 1.5) (x1)  {$x_1$};
+      \node [] at (0, 0.5) (x2) {$x_2$};
+      \node [] at (0, -0) (vdots) {$\vdots$};
+      \node [] at (0, -0.7) (xn) {$x_n$};
+      \node [label=above:\parbox{2cm}{\centering Bias}] at (2, 2) (bias) {$b$};
+      \node [label=above:\parbox{2cm}{\centering Output}] at (4, 0.15) (y) {$y = f(\sum_i{w_{i}\,x_i} - b)$};
+      
+      \node [neuron/.try] (output) at (2,0.15) {\large{$\displaystyle{\Sigma | f}$}};
+      
+      \draw [o-latex] (x1) -- (output);
+      \draw [o-latex] (x2) -- (output);
+      \draw [o-latex] (xn) -- (output);
+      \draw [o-latex] (bias) -- (output);
+      \draw [->] (output) -- (y);
+
+      \node [] at (1,1) () {$w_1$} ;
+      \node [] at (1,.5) () {$w_2$} ;
+      \node [] at (1, -0.45) () {$w_n$} ;
+    \end{tikzpicture}
+  \end{tcolorbox}
+  \smallskip
+  \visible<1->{An \bfdarkchoco{artificial neuron}:
+    \begin{itemize}
+    \item <1-> receives the input stimuli $(x_{i})_{i=1..n}$ with \textbf{weights} $(w_i)$
+    \item <1-> computes the \textbf{weighted sum} of the input $\sum_i{w_{i}\,x_i - b}$
+    \item <1-> outputs its activation $f(\sum_i{w_{i}\,x_i} - b)$, computed with a non-linear \textbf{activation function} $f$ .
+    \end{itemize}
+  }
+
+\end{frame}
+%===============================================================================
+
+\subsection{Activation functions}
+
+%===============================================================================
+\begin{frame}{Artificial Neural Networks}
+  
+  \begin{tcolorbox}[title={Common activation functions}]
+    \hspace*{-5mm}\includegraphics[width=1.1\textwidth]{images/activ_functions-2.png}
+  \end{tcolorbox}
+  
+  \begin{itemize}
+  \item Introduces a non-linear behavior.
+  \item Sets the range of the neuron output: $[-1, 1]$, $[0, 1]$, $[0, \infty[$...
+    \item The bias $b$ sets the activation threshold of the neuron.
+  \end{itemize}
+  
+\end{frame}
+%===============================================================================
+
+\subsection{Activation functions SoftMax}
+
+%===============================================================================
+\begin{frame}{Réseau de neurones dense}
+  \vspace*{-2mm}
+
+  \begin{itemize}
+    
+  \item Dans les couches intermédiaires la fonction d'activation \bfdarkchoco{relu} favorise l'apprentissage du réseau
+    \footnote{{\tiny évite le {\em vanishing gradient} qui apparaît dans
+        l'algorithme de {\em back propagation}}}.
+
+  \item La classification (dernière couche) utilise la fonction \bfdarkchoco{softmax} :
+
+  \end{itemize}
+
+    
+  \begin{tcolorbox}[title=Fonction d'activation {\em softmax}]  
+
+    \begin{minipage}{.45\textwidth}
+      \hspace*{-5mm}\includegraphics[width=1.\textwidth]{images/softmax-2.png}
+    \end{minipage}
+    \begin{minipage}{.6\textwidth}
+      {\small
+        \begin{itemize}
+        \item L'activation du neurone $k$ est $Y_k = e^{y_k}/\sum_i{e^{y_i}}$ 
+          avec $y_k = \sum_i \omega_i x_i - b$ calculé par le neurone $k$.
+        \item Les sorties des neurones s'interprètent comme des probabilités dans l'intervalle [0,1].
+        \end{itemize}
+      }
+    \end{minipage}
+  \end{tcolorbox}
+
+  \vspace*{-1mm}
+  \visible<2>{Réponse du réseau $\leadsto$ label associé au neurone de plus grande probabilité.}
+
+\end{frame}
+%===============================================================================
+
+\subsection{One-hot coding}
+
+%===============================================================================
+\begin{frame}{Réseau de neurones dense}
+
+  \begin{tcolorbox}[title=Codage {\em One-hot} des labels]  
+
+    Mettre les labels des images au format de la sortie du réseau :
+
+    {\small
+        \begin{itemize}
+        \item Labels des images  : \textbf{nombres entiers} de 0 à 9.
+        \item Sortie du réseau : \textbf{vecteur de 10 \texttt{float}} dans l'intervalle [0,1] calculés par les fonctions {\em softmax} des 10 neurones de sortie.
+        \item Codage {\em one-hot} d'un ensemble ordonné $\mathfrak{L}$ de $N$ labels : \\[1mm]
+          - chaque label est représenté par un vecteur à $N$ composantes toutes nulles, sauf une (égale à $1$),\\
+          - le rang du $1$ du vecteur associé à un label est le rang du label dans $\mathfrak{L}$.
+        \end{itemize}
+      }
+  \end{tcolorbox}  
+
+  \visible<2>{
+    \begin{minipage}{.25\textwidth}
+      \vspace*{-22mm}\hspace*{-5mm}\includegraphics[width=1.1\textwidth]{images/oneHotCoded.png}
+    \end{minipage}
+    \begin{minipage}{.7\textwidth}
+      Le codage {\em one-hot} des labels '0' à '9' donne un vecteur à 10 composantes, comme celui calculé par le réseau de neurones.
+    \end{minipage}
+  }
+    
+\end{frame}
+%===============================================================================
+
+%===============================================================================
+\begin{frame}{1 - Réseau de neurones dense}
+
+  \begin{tcolorbox}[title=Fonction d'erreur : {\em Cross entropy error}]  
+
+    \begin{itemize}
+    \item L'image traitée par le réseau $\leadsto$ vecteur $\hat{Y}$ de 10 \texttt{float} à comparer au vecteur $Y$ du codage {\em hot-one} du label de l'image.
+    \item La fonction d'erreur (de perte) {\em cross entropy} est adaptée au codage {\em one-hot} : $e(Y,\hat{Y})=-\sum_i Y_i\ log(\hat{Y}_i)$\\
+      \includegraphics[width=.9\textwidth]{images/CrossEntropyError.png}
+    \end{itemize}
+
+  \end{tcolorbox}
+  
+\end{frame}
+%===============================================================================
+
+\subsection{Optimisation}
+
+%===============================================================================
+\begin{frame}{1 - Réseau de neurones dense}
+
+  \begin{tcolorbox}[title=Optimisation et {\em Back Propagation}]  
+
+    \begin{itemize}
+        \visible<1->{\item Pendant la phase d'apprentissage un algorithme d'optimisation calcule le gradient de la fonction d'erreur 
+            par rapport aux poids du réseau.}
+        \visible<2->{\item L'algorithme de {\em Back Propagation} \textbf{modifie} les poids du réseau couche par couche grâce au gradient de la fonction d'erreur,
+            en itérant de la dernière couche à la première couche. }
+        \visible<3->{\item Exemples d'algorithme d'optimisation : 
+        \begin{itemize}
+        \item Descente de Gradient ({\em Gradient Descent (GD)})
+        \item Descente de Gradient Stochastique ({\em Stochastic Gradient Descent (SGD)})
+        \item {\em \href{https://arxiv.org/abs/1412.6980}{Adam}} (version améliorée de descente de gradient)...
+        \end{itemize}
+
+        {\small Le module \href{https://www.tensorflow.org/api_docs/python/tf/keras/optimizers}{tf.keras.optimizers}
+          propose l'implémentation Python de plusieurs algorithmes d'optimisation.}}
+      
+    \end{itemize}
+  \end{tcolorbox}
+  
+\end{frame}
+%===============================================================================
+
+\subsection{Back-propgation algorithm}
+
+%===============================================================================
+\begin{frame}{1 - Réseau de neurones dense}
+
+  {\small Visualisation des itérations d'algorithmes de descente de gradient pour une fonction de perte ultra-simple à seulement 2 variables :}\\[2mm]
+  \hspace*{25mm}\href{https://github.com/Jaewan-Yun/optimizer-visualization/blob/master/figures/movie9.gif}{\includegraphics[width=.45\textwidth]{images/adam_plot3D_animated.png}}\\[-2mm]
+  %\hspace*{8mm}\includegraphics[width=.8\textwidth]{images/adam_plot3D_animated.png}\\[-2mm]
+  %\animategraphics[width=.8\textwidth,controls]{10}{./images/Adam-plot3D/movie9/img_}{0}{114}
+  \hspace*{25mm}{\tiny (source : \href{https://github.com/Jaewan-Yun/optimizer-visualization}{github.com/Jaewan-Yun/optimizer-visualization})}
+
+  \medskip
+  {\small Vidéo d'explication de l'algorithme de {\em back propagation} :}\\
+  \hspace*{30mm}\href{https://www.3blue1brown.com/lessons/backpropagation}{\includegraphics[width=.35\textwidth]{images/video-BackPropagation.png}}
+\end{frame}
+%===============================================================================
+
+\subsection{Supervised learning}
+
+%===============================================================================
+\begin{frame}{}
+  \includegraphics[width=1.2\textwidth]{./images/NetworkTraining.png}
+  \vspace*{-3mm}\begin{itemize}
+  \item Le jeu de données est découpé en (mini) {\bf batches} de taille \code{batch\_size}
+  \item Après chaque {\em feed forward} l'algorithme de {\em Back Propagation} modifie les poids
+    des neurones pour minimiser l'erreur $e$.
+  \end{itemize}
+\end{frame}
+%===============================================================================
+
+\subsection{Supervised learning}
+
+%===============================================================================
+\begin{frame}{}
+  \includegraphics[width=\textwidth]{./images/NetworkTraining_2.png}
+  \vspace*{-3mm}\begin{itemize}
+  \item L'entraînement avec le jeu de données est répété \code{n\_epoch} fois,
+  \item L'état du réseau à la fin de l'époque \code{n} sert d'état initial pour l'époque \code{n+1}.
+  \end{itemize}
+  
+\end{frame}
+%===============================================================================
+
+ 
+\end{document}
+
+
+To understand the difference between on-policy and off-policy, you need to understand that there are two phases of an RL algorithm:
+the learning (or training) phase and the inference (or behaviour) phase (after the training phase).
+The distinction between on-policy and off-policy algorithms only concerns the training phase.
+
+There are mainly three ways to implement Reinforcement Learning. They are:
+
+Value-based:
+- learn the state-action value,
+- acts by choosing the best action in the state.
+- Estimates the policy by first estimating the associated value function
+- Don't store any explicit policy, only a value function.
+- The policy is here implicit and is derived from the value function (pick the action with the best value).
+- Exploration is the key to value-based reinforcement learning
+-> Q-Learning
+
+
+Policy-based: directly learns the stochastic policy function that maps state to action. Act by sampling policy.
+we explicitly build a representation of a policy $\pi(s,a)$ and keep it in memory during learning.
+
+Model-based: refers to learning optimal behavior indirectly by learning a model of the environment by taking actions and observing the outcomes.
+
+Model-based vs. Model-free
+
+The problem we're often dealing with in RL is that whenever you are in state s
+and make an action a you might not necessarily know the next state s'
+
+that you'll end up in (the environment influences the agent).
+
+In Model-based approach you either have an access to the model (environment) so you know the probability distribution over states that you end up in, or you first try to build a model (often - approximation) yourself. This might be useful because it allows you to do planning (you can "think" about making moves ahead without actually performing any actions).
+
+In Model-free you're not given a model and you're not trying to explicitly figure out how it works. You just collect some experience and then derive (hopefully) optimal policy.
+
+
+
+\section{Ressources}
+
+%===============================================================================
+\begin{frame}{Videos}
+
+  \hspace*{-3mm}
+  \href{https://youtu.be/trWrEWfhTVg}{\includegraphics[width=.5\textwidth]{images/video-LeDeepLearning.png}}
+  \hfill%
+  \href{https://www.3blue1brown.com/lessons/neural-networks}{\includegraphics[width=.5\textwidth]{images/video-NeuralNetworks.png}}\\[-2mm]
+
+  {\tiny\hspace*{-2mm}\href{run:./videos/Le deep learning - YouTube.webm}{1/ Local: "Le deep learning - YouTube.webm"}%
+    \hfill%
+    \href{run:./videos/But what is a neural network.webm}{2/ local : "But what is a neural network.webm"}}\\[2mm]
+            
+  \hspace*{-3mm}
+  \href{https://www.3blue1brown.com/lessons/gradient-descent}{\includegraphics[width=.5\textwidth]{images/video-HowMachineLearn.png}}
+  \hfill
+  \href{https://www.3blue1brown.com/lessons/backpropagation}{\includegraphics[width=.5\textwidth]{images/video-BackPropagation.png}}\\[-2mm]
+  
+  {\tiny\hspace*{-3mm}\href{run:./videos/Gradient descent how neural networks learn.webm}{3/ Local: "Gradient descent how neural networks learn.webm"}%
+    \hfill%
+    \href{run:./videos/What is backpropagation really doing .webm}{4/ Local: "What is backpropagation really doing .webm"}}\\[2mm]
+  
+\end{frame}
+%===============================================================================
+
+%===============================================================================
+
+\end{document}
+
+\begin{frame}{Biliographiesymbols for figures}
+
+  \begin{figure}[hb]
+    \begin{center}
+        \input{images/NetworkTraining-export.tex}
+    \end{center}
+    \caption[]{\label{fig:latex_dia_integration} A sample font-consistent figure
+    }
+  \end{figure}
+  
+\end{frame}
+%===============================================================================
+
+[ML-01] – JLC  
+« Machine Learning for Humans » 
+https://medium.com/machine-learning-for-humans
+
+Point d'entrée du site « Machine Learning for Humans », à partir duquel on peut aller sur "A Beginner's Guide to AI/ML" et d'autres documents très intéressants.
+
+
+[ML-02] – JLC  
+« A Beginner’s Guide to AI/ML »
+https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12
+
+Cours complet : supervised learning, unsupervised learning, Neural networks & deep learning, reinforcement learning....Version PDF du cours également disponible. sur : https://www.dropbox.com/s/e38nil1dnl7481q/machine_learning.pdf?dl=0
+
+[ML-03] – VG
+« ML Basics : Unsupervised, supervised and reinforcement learning »
+Article court mais utile pour bien saisir la différence entre supervised, unsupervised et reinforcement learning.
+https://medium.com/@machadogj/ml-basics-supervised-unsupervised-and-reinforcement-learning-b18108487c5a
+
+DRL  (Deep Reinforcement Learning)
+[DRL-01] – JLC 
+« Introduction to Various Reinforcement Learning Algorithms. Part I (Q-Learning, SARSA, DQN, DDPG) »
+https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-i-q-learning-sarsa-dqn-ddpg-72a5e0cb6287
+
+[DRL-02] – VG
+https://deepmind.com/blog/deep-reinforcement-learning/
+Récapitulatif de ce qu’on sait faire aujourd’hui en DRL fait par DeepMind (un des leaders mondiaux en DRL, concepteurs d’AlphaGo notamment) 
+
+[DRL-03] – JLC
+« Demystifying Deeep Reinforcement Learning », Tambet Matiisen
+https://neuro.cs.ut.ee/demystifying-deep-reinforcement-learning/
+Article très clair et très pédagogique sur ML, RL et DQN.
+
+
+
+\footnote{\tiny \hyperlink{DeepLeraning}{[2]} {\em Deep Learning.}, Goodfellow {\em et al.}, Chapitre {\em "6.5 Back-Propagation and Other Differentiation Algorithms"}}
+
+IBM Watson https://www.ibm.com/watson/products-services
+
+
+*******************
+*******************
+
+    one episode = one a sequence of states, actions and rewards, which ends with terminal state. For example, playing an entire game can be considered as one episode, the terminal state being reached when one player loses/wins/draws. Sometime, one may prefer to define one episode as several games (example: "each episode is a few dozen games, because the games go up to score of 21 for either player").
+    one epoch = one forward pass and one backward pass of all the training examples, in the neural network terminology.
+
+%=================================== 6 =========================================
+\begin{frame}{Artificial Intelligence}
+
+  already a reality:
+  \vfill
+  \begin{itemize}
+  \item Runs in much of our present technology (smartphone apps...)\\[5mm]
+  \item Powered by rapid advances in data storage, computer processing power.\\[5mm]
+  \item Powered by {\bf free dataset acces via Internet} and {\bf code publishing as open source} environments.\\[5mm]
+  \item Rate of acceleration is already astounding.\\[5mm]
+  \item Will likeky shape our future more powerfully than any other innovation this century.
+  \end{itemize}
+
+\end{frame}
+%===============================================================================
+
+    
+
+%===============================================================================
+\begin{frame}
+  \begin{tcolorbox}[title={RL ingredients: \textbf{Policy}, \textbf{Value function}}, fonttitle=\Large]    
+    \begin{itemize}
+    \item <1-> The \bfdarkchoco{Policy} $\pi(a|s)$ is a probalistic mapping between action $a$ and state $s$.
+      \begin{itemize}
+      \item <2-> can be as simple as a look-up table (Q-learning) or involve extensive computation.
+      \end{itemize}
+      \item Is the core of a DRL in the sense that it alone is sufficient to determine behavior.
+    \item <3-> The \bfdarkchoco{Value function} selects actions that bring states of the highest value over the long run.
+    \end{itemize}    
+  \end{tcolorbox}
+\end{frame}
+%===============================================================================
+
+%================================ 2 =============================================
+\begin{frame}{Practical Work: 1 $\times$ 4h}
+
+  \begin{tcolorbox}[title=DRL pactical work:]
+    \begin{itemize}
+    \item Build the \href{https://pybullet.org/wordpress/}{PyBullet} simulation of a  2 DOF robot arm based on its URDF description.
+    \item train a PPO (Proximal Policy Optimisation) network to drive the displacement of the end effector of a 2 DOF robot arm.
+    \end{itemize}
+  \end{tcolorbox}
+
+\center{\href{run:./videos/trained\_PPO\_example.mp4}{\includegraphics[width=.5\textwidth]{images/2DOF-robot.png}}}
+  
+
+\end{frame}
+%===============================================================================
+
+

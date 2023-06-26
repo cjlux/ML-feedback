@@ -1,0 +1,815 @@
+% Graphic for TeX using PGF
+% Title: /home/jlc/work/IA-MachineLearning/1-ENSPIMA/2022-2023/course/Slides/images/NetworkTraining.dia
+% Creator: Dia v0.97+git
+% CreationDate: Thu Aug 25 10:25:12 2022
+% For: jlc
+% \usepackage{tikz}
+% The following commands are not supported in PSTricks at present
+% We define them conditionally, so when they are implemented,
+% this pgf file will use them.
+\ifx\du\undefined
+  \newlength{\du}
+\fi
+\setlength{\du}{15\unitlength}
+\begin{tikzpicture}[even odd rule]
+\pgftransformxscale{1.000000}
+\pgftransformyscale{-1.000000}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{1.000000, 1.000000, 1.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{diafillcolor}{rgb}{1.000000, 1.000000, 1.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (5.576380\du,-15.269600\du)--(5.576380\du,18.147190\du)--(57.548344\du,18.147190\du)--(57.548344\du,-15.269600\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (5.576380\du,-15.269600\du)--(5.576380\du,18.147190\du)--(57.548344\du,18.147190\du)--(57.548344\du,-15.269600\du)--cycle;
+}% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (31.562362\du,1.632858\du){};
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{diafillcolor}{rgb}{0.909804, 0.674510, 0.364706}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{0.784314}
+\definecolor{dialinecolor}{rgb}{0.909804, 0.674510, 0.364706}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathmoveto{\pgfpoint{20.798275\du}{-3.080077\du}}
+\pgfpathcurveto{\pgfpoint{20.692175\du}{-5.979187\du}}{\pgfpoint{27.995618\du}{-8.587135\du}}{\pgfpoint{36.992297\du}{-8.205458\du}}
+\pgfpathcurveto{\pgfpoint{45.988975\du}{-7.823780\du}}{\pgfpoint{49.642172\du}{-3.570805\du}}{\pgfpoint{52.718719\du}{-1.908720\du}}
+\pgfpathcurveto{\pgfpoint{55.795267\du}{-0.246635\du}}{\pgfpoint{44.437919\du}{1.854770\du}}{\pgfpoint{45.146219\du}{-0.883992\du}}
+\pgfpathcurveto{\pgfpoint{45.854519\du}{-3.622760\du}}{\pgfpoint{42.220577\du}{-4.147992\du}}{\pgfpoint{40.860519\du}{-4.486440\du}}
+\pgfpathcurveto{\pgfpoint{39.500462\du}{-4.824888\du}}{\pgfpoint{38.028278\du}{-5.206565\du}}{\pgfpoint{35.302012\du}{-4.988464\du}}
+\pgfpathcurveto{\pgfpoint{32.575745\du}{-4.770362\du}}{\pgfpoint{29.304226\du}{-4.661312\du}}{\pgfpoint{29.195175\du}{-3.516280\du}}
+\pgfpathcurveto{\pgfpoint{29.086125\du}{-2.371248\du}}{\pgfpoint{20.904275\du}{-0.180962\du}}{\pgfpoint{20.798275\du}{-3.080077\du}}
+\pgfpathclose
+\pgfusepath{fill,stroke}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{0.909804, 0.674510, 0.364706}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{49.256241\du}{-1.372048\du}}{\pgfpoint{6.369583\du}{0\du}}{\pgfpoint{0\du}{4.069450\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{1.000000, 0.647059, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{49.256241\du}{-1.372048\du}}{\pgfpoint{6.369583\du}{0\du}}{\pgfpoint{0\du}{4.069450\du}}
+\pgfusepath{stroke}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (9.950000\du,-2.000000\du){...};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (10.450000\du,0.000000\du){};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (22.506300\du,-17.449300\du){Supervised learning };
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{diafillcolor}{rgb}{0.886275, 0.800000, 0.752941}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (18.163300\du,-3.530800\du)--(18.163300\du,12.235145\du)--(37.330687\du,12.235145\du)--(37.330687\du,-3.530800\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (18.163300\du,-3.530800\du)--(18.163300\du,12.235145\du)--(37.330687\du,12.235145\du)--(37.330687\du,-3.530800\du)--cycle;
+}% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (27.746993\du,4.546235\du){};
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+% was here!!!
+\pgfsetarrowsend{latex}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (36.283467\du,3.408436\du)--(45.443722\du,3.408436\du);
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{diafillcolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (7.042000\du,-13.500000\du)--(7.042000\du,5.658178\du)--(13.449996\du,5.658178\du)--(13.449996\du,-13.500000\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (7.042000\du,-13.500000\du)--(7.042000\du,5.658178\du)--(13.449996\du,5.658178\du)--(13.449996\du,-13.500000\du)--cycle;
+}\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+{
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+% was here!!!
+\pgfsetarrowsend{latex}
+{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (13.520468\du,4.241578\du)--(17.553425\du,4.241578\du)--(17.553425\du,12.666124\du)--(37.893825\du,12.666124\du)--(37.893825\du,4.553468\du)--(45.552773\du,4.553468\du);
+}}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{0.956863, 0.592157, 0.592157}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{50.113213\du}{3.845326\du}}{\pgfpoint{4.626160\du}{0\du}}{\pgfpoint{0\du}{2.270403\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{50.113213\du}{3.845326\du}}{\pgfpoint{4.626160\du}{0\du}}{\pgfpoint{0\du}{2.270403\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetroundjoin
+\pgfsetbuttcap
+{\pgfsetcornersarced{\pgfpoint{0.500000\du}{0.500000\du}}\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (32.938000\du,-0.386597\du)--(32.938000\du,6.674296\du)--(36.097666\du,6.674296\du)--(36.097666\du,-0.386597\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.500000\du}{0.500000\du}}\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (32.938000\du,-0.386597\du)--(32.938000\du,6.674296\du)--(36.097666\du,6.674296\du)--(36.097666\du,-0.386597\du)--cycle;
+}\pgfsetlinewidth{0.200000\du}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+% was here!!!
+\pgfsetarrowsend{latex}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (13.430587\du,3.556627\du)--(20.786500\du,3.560360\du);
+}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (21.364500\du,10.839300\du){Hidden };
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (21.364500\du,11.897633\du){Layer};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (18.425900\du,5.113610\du){Input};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (18.425900\du,6.171943\du){Layer};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (33.219700\du,7.706470\du){Ouput};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (33.219700\du,8.764803\du){Layer};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (26.153100\du,10.879700\du){Hidden };
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (26.153100\du,11.938033\du){Layer};
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{diafillcolor}{rgb}{0.909804, 0.674510, 0.364706}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (27.693100\du,-4.248820\du)--(27.710200\du,-3.268620\du)--(28.307000\du,-3.257200\du)--(27.327200\du,-2.277380\du)--(26.323800\du,-3.292610\du)--(27.008500\du,-3.304420\du)--(27.008500\du,-4.248820\du)--cycle;
+\definecolor{dialinecolor}{rgb}{1.000000, 0.647059, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (27.693100\du,-4.248820\du)--(27.710200\du,-3.268620\du)--(28.307000\du,-3.257200\du)--(27.327200\du,-2.277380\du)--(26.323800\du,-3.292610\du)--(27.008500\du,-3.304420\du)--(27.008500\du,-4.248820\du)--cycle;
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{diafillcolor}{rgb}{0.909804, 0.674510, 0.364706}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (22.881900\du,-3.759590\du)--(22.839900\du,-2.218030\du)--(23.465600\du,-2.206230\du)--(22.485800\du,-1.226410\du)--(21.482400\du,-2.241640\du)--(22.167000\du,-2.253450\du)--(22.049400\du,-3.700130\du)--cycle;
+\definecolor{dialinecolor}{rgb}{1.000000, 0.647059, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (22.881900\du,-3.759590\du)--(22.839900\du,-2.218030\du)--(23.465600\du,-2.206230\du)--(22.485800\du,-1.226410\du)--(21.482400\du,-2.241640\du)--(22.167000\du,-2.253450\du)--(22.049400\du,-3.700130\du)--cycle;
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (26.867800\du,-14.052400\du){one epoch};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (6.436850\du,-14.083800\du){input data with labels};
+\pgfsetlinewidth{0.200000\du}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+% was here!!!
+\pgfsetarrowsend{latex}
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (24.218800\du,3.560360\du)--(25.587300\du,3.553990\du);
+}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetroundjoin
+\pgfsetbuttcap
+{\pgfsetcornersarced{\pgfpoint{0.300000\du}{0.300000\du}}\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (20.786500\du,-1.264560\du)--(20.786500\du,8.385281\du)--(24.218772\du,8.385281\du)--(24.218772\du,-1.264560\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.300000\du}{0.300000\du}}\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (20.786500\du,-1.264560\du)--(20.786500\du,8.385281\du)--(24.218772\du,8.385281\du)--(24.218772\du,-1.264560\du)--cycle;
+}\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{22.502570\du}{0.045852\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{22.502570\du}{0.045852\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{22.502570\du}{2.223020\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{22.502570\du}{2.223020\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (22.115100\du,3.715210\du){...};
+\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{22.502570\du}{4.934900\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{22.502570\du}{4.934900\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{22.502570\du}{7.131330\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{22.502570\du}{7.131330\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetroundjoin
+\pgfsetbuttcap
+{\pgfsetcornersarced{\pgfpoint{0.300000\du}{0.300000\du}}\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (25.774100\du,-2.392550\du)--(25.774100\du,9.767553\du)--(29.206372\du,9.767553\du)--(29.206372\du,-2.392550\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.300000\du}{0.300000\du}}\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (25.774100\du,-2.392550\du)--(25.774100\du,9.767553\du)--(29.206372\du,9.767553\du)--(29.206372\du,-2.392550\du)--cycle;
+}\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{27.490170\du}{-1.082130\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{27.490170\du}{-1.082130\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{27.490170\du}{1.095034\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{27.490170\du}{1.095034\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (27.102600\du,2.587220\du){...};
+\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{27.490170\du}{3.806910\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{27.490170\du}{3.806910\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{27.490170\du}{6.003340\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{27.490170\du}{6.003340\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (50.019578\du,3.678858\du){Cost function};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (50.019578\du,4.737191\du){-> e: error};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (50.019578\du,5.795525\du){};
+\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{27.486470\du}{8.357820\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 1.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{27.486470\du}{8.357820\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.200000\du}
+\pgfsetdash{}{0pt}
+\pgfsetbuttcap
+{
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+% was here!!!
+\pgfsetarrowsend{latex}
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (29.213700\du,3.650790\du)--(30.582300\du,3.644420\du);
+}
+\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{34.532470\du}{0.865861\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{1.000000, 0.000000, 0.741176}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{34.532470\du}{0.865861\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{34.473070\du}{3.065880\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{1.000000, 0.000000, 0.741176}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{34.473070\du}{3.065880\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+\pgfsetlinewidth{0.150000\du}
+\pgfsetdash{}{0pt}
+\definecolor{diafillcolor}{rgb}{1.000000, 0.752941, 0.796078}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\pgfpathellipse{\pgfpoint{34.550370\du}{5.334280\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{fill}
+\definecolor{dialinecolor}{rgb}{1.000000, 0.000000, 0.741176}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\pgfpathellipse{\pgfpoint{34.550370\du}{5.334280\du}}{\pgfpoint{0.914470\du}{0\du}}{\pgfpoint{0\du}{0.914470\du}}
+\pgfusepath{stroke}
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (31.224100\du,3.783930\du){...};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.525490, 0.145098, 0.058824}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (29.515200\du,-2.467660\du){Neural Network};
+% image rendering not supported% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (13.919400\du,5.655195\du){label};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (13.861900\du,3.123150\du){data};
+% image rendering not supported\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{diafillcolor}{rgb}{0.847059, 0.898039, 0.898039}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (31.321663\du,-7.169477\du)--(28.649922\du,-6.678749\du)--(28.649922\du,-7.496629\du)--(26.959637\du,-6.024445\du)--(28.758973\du,-4.988464\du)--(28.649922\du,-5.806343\du)--(31.430714\du,-5.370141\du)--cycle;
+\definecolor{dialinecolor}{rgb}{0.847059, 0.898039, 0.898039}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (31.321663\du,-7.169477\du)--(28.649922\du,-6.678749\du)--(28.649922\du,-7.496629\du)--(26.959637\du,-6.024445\du)--(28.758973\du,-4.988464\du)--(28.649922\du,-5.806343\du)--(31.430714\du,-5.370141\du)--cycle;
+\pgfsetlinewidth{0.100000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+\pgfsetbuttcap
+\definecolor{diafillcolor}{rgb}{0.847059, 0.898039, 0.898039}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (14.691439\du,14.858754\du)--(43.644386\du,15.022330\du)--(43.661615\du,14.007600\du)--(45.323315\du,15.421800\du)--(43.698912\du,17.585021\du)--(43.697015\du,16.305700\du)--(14.745964\du,16.330938\du)--cycle;
+\definecolor{dialinecolor}{rgb}{0.847059, 0.898039, 0.898039}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (14.691439\du,14.858754\du)--(43.644386\du,15.022330\du)--(43.661615\du,14.007600\du)--(45.323315\du,15.421800\du)--(43.698912\du,17.585021\du)--(43.697015\du,16.305700\du)--(14.745964\du,16.330938\du)--cycle;
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (25.705727\du,15.976275\du){feed forward };
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (31.730501\du,-5.985618\du){Back propagation};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (49.503276\du,-2.855562\du){Gradient Descent:};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (49.503276\du,-1.797229\du){optimize the network};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (49.503276\du,-0.738896\du){weights to minimize };
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (49.503276\du,0.319438\du){the error e};
+\pgfsetlinewidth{0.200000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{diafillcolor}{rgb}{1.000000, 1.000000, 1.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (7.450000\du,-1.534970\du)--(7.450000\du,2.000000\du)--(12.950000\du,2.000000\du)--(12.950000\du,-1.534970\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (7.450000\du,-1.534970\du)--(7.450000\du,2.000000\du)--(12.950000\du,2.000000\du)--(12.950000\du,-1.534970\du)--cycle;
+}% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (10.200000\du,0.426577\du){};
+\pgfsetlinewidth{0.200000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{diafillcolor}{rgb}{0.333333, 0.898039, 0.627451}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (7.450000\du,2.000000\du)--(7.450000\du,5.024061\du)--(12.950000\du,5.024061\du)--(12.950000\du,2.000000\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (7.450000\du,2.000000\du)--(7.450000\du,5.024061\du)--(12.950000\du,5.024061\du)--(12.950000\du,2.000000\du)--cycle;
+}% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (10.200000\du,3.706093\du){};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (7.606130\du,4.839530\du){batch\_size};
+\pgfsetlinewidth{0.200000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{diafillcolor}{rgb}{1.000000, 1.000000, 1.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (7.450000\du,-6.000000\du)--(7.450000\du,-2.465030\du)--(12.950000\du,-2.465030\du)--(12.950000\du,-6.000000\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (7.450000\du,-6.000000\du)--(7.450000\du,-2.465030\du)--(12.950000\du,-2.465030\du)--(12.950000\du,-6.000000\du)--cycle;
+}% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (10.200000\du,-4.038453\du){};
+\pgfsetlinewidth{0.200000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{diafillcolor}{rgb}{1.000000, 1.000000, 1.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (7.496580\du,-9.579550\du)--(7.496580\du,-6.044580\du)--(12.996580\du,-6.044580\du)--(12.996580\du,-9.579550\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (7.496580\du,-9.579550\du)--(7.496580\du,-6.044580\du)--(12.996580\du,-6.044580\du)--(12.996580\du,-9.579550\du)--cycle;
+}% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (10.246580\du,-7.618003\du){};
+\pgfsetlinewidth{0.200000\du}
+\pgfsetdash{}{0pt}
+\pgfsetmiterjoin
+{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{diafillcolor}{rgb}{1.000000, 1.000000, 1.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\fill (7.450000\du,-13.000000\du)--(7.450000\du,-9.465030\du)--(12.950000\du,-9.465030\du)--(12.950000\du,-13.000000\du)--cycle;
+}{\pgfsetcornersarced{\pgfpoint{0.000000\du}{0.000000\du}}\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\draw (7.450000\du,-13.000000\du)--(7.450000\du,-9.465030\du)--(12.950000\du,-9.465030\du)--(12.950000\du,-13.000000\du)--cycle;
+}% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (10.200000\du,-11.038453\du){};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (10.200000\du,-3.939412\du){batch...};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (10.200000\du,-10.939392\du){batch\_k};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (10.200000\du,3.805138\du){batch\_1};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.501961, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (10.200000\du,0.525623\du){batch\_2};
+% image rendering not supported% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (38.497196\du,6.391700\du){actual label};
+% image rendering not supported% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base west,inner sep=0pt,outer sep=0pt,color=dialinecolor] at (37.352164\du,2.956605\du){computed label};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (50.571501\du,11.517081\du){Cost function};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (50.571501\du,12.575414\du){\$\ensuremath{\backslash}leadsto\$ error \$e\$};
+% setfont left to latex
+\definecolor{dialinecolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetstrokecolor{dialinecolor}
+\pgfsetstrokeopacity{1.000000}
+\definecolor{diafillcolor}{rgb}{0.000000, 0.000000, 0.000000}
+\pgfsetfillcolor{diafillcolor}
+\pgfsetfillopacity{1.000000}
+\node[anchor=base,inner sep=0pt, outer sep=0pt,color=dialinecolor] at (50.571501\du,13.633748\du){};
+\end{tikzpicture}
