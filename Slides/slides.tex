@@ -1,5 +1,5 @@
 \documentclass[10pt,serif,mathserif,compress,hyperref={colorlinks}]{beamer}
-%\mode<presentation>
+\mode<presentation>
 \usepackage{pgf}
 \usepackage{pgfpages}
 \usepackage[T1]{fontenc}
@@ -304,7 +304,7 @@
 
     \item \textbf{Control/command}
       \begin{itemize}
-      \item Controlling robots, drones...
+      \item Controlling \href{run:./videos/trained-PPO-example.webm}{robots}, drones, \href{https://www.linkedin.com/in/jean-luc-charles-54898aa7/recent-activity/all/}{mecatronic systems}
       \item Factory optimization
       \item Financial (stock) trading...
       \end{itemize}        
@@ -427,8 +427,9 @@ Common NN architectures:
   \item \bfdarkchoco{Transformers} : Recently used for Natural Language Processing and then for image classification.
   \item \bfdarkchoco{Auto Encoder} (AEN): Dimensionality reduction, Feature extraction, Denoising of data/images, Imputing missing data.
   \item \bfdarkchoco{Generative Adversarial} (GAN): to generate text, images, music...
+  \item \bfdarkchoco{Large Language Model} (LLM): read texte, sound, write books, images, speak, make music ...ChatGPT
 \end{itemize}
-Graphical chart: \href{https://chart-studio.plotly.com/~SolClover/90.embed?autosize=true&referrer=https\%3A\%2F\%2Ftowardsdatascience.com\%2F}{from Saul Dobilas on Medium} 
+{\small\centering[ Graphical chart: \href{https://chart-studio.plotly.com/~SolClover/90.embed?autosize=true&referrer=https\%3A\%2F\%2Ftowardsdatascience.com\%2F}{from Saul Dobilas on Medium}] }
 \end{frame}
 %===============================================================================
 
@@ -436,7 +437,7 @@ Graphical chart: \href{https://chart-studio.plotly.com/~SolClover/90.embed?autos
 
 \subsection{Motivation}
 
-%=================================== 13 ========================================
+%=================================== 16 ========================================
 \begin{frame}{The need for PVE (Python Virtual Environment) to program NN training with Python}
 
   \visible<2->{
@@ -464,7 +465,7 @@ Graphical chart: \href{https://chart-studio.plotly.com/~SolClover/90.embed?autos
 \end{frame}
 %===============================================================================
 
-%=================================== 14 ========================================
+%=================================== 17 ========================================
 \begin{frame}{PVE: simple to create \& use}
   
   \begin{tcolorbox}[title=with {\bf conda}]
@@ -487,7 +488,7 @@ Graphical chart: \href{https://chart-studio.plotly.com/~SolClover/90.embed?autos
 \end{frame}
 %===============================================================================
 
-%=================================== 14 ========================================
+%=================================== 18 ========================================
 \begin{frame}{PVE: simple to create \& use}
   
   \begin{tcolorbox}[title=with Python {\bf env}]
@@ -495,7 +496,7 @@ Graphical chart: \href{https://chart-studio.plotly.com/~SolClover/90.embed?autos
     \begin{itemize}
     \item <1-> Install the \href{https://docs.python.org/3/library/venv.html}{venv} Python module
     \item <2-> \command{python -m venv pyml} $\leadsto$ {\small creates the \DarkRed{\boldtt{pyml}} PVE }
-    \item <3-> \command{./pyml/Scripts/activate} $\leadsto$ {\small activates the \DarkRed{\boldtt{pyml}} PVE }
+    \item <3-> \command{source ./pyml/bin/activate} $\leadsto$ {\small activates the \DarkRed{\boldtt{pyml}} PVE }
     \item <4-> \command{pip install <module>} $\leadsto$ {\small installs a module}
     \end{itemize}
     
@@ -507,6 +508,22 @@ Graphical chart: \href{https://chart-studio.plotly.com/~SolClover/90.embed?autos
     \visible<6->{\dSmiley[1.][green!60!white] No conflict with \Chocolate{conda install}}
   \end{tcolorbox}
   }
+\end{frame}
+%===============================================================================
+
+%=================================== 18 ========================================
+\begin{frame}{PVE: simple to create \& use}
+  
+  \begin{tcolorbox}[title=the winning recipe]
+    
+    \begin{itemize}
+    \item <1-> \Chocolate{Python Virtual Environment} for every ML project
+    \item <2-> \Chocolate{Git} repository (GitHub, GitLab...) for storing, sharing \& versionning the project files
+    \item <3-> \Chocolate{requirement.txt} to install the Python modules in the required version for each project
+    \item <4-> \Chocolate{Jupyter notebook} and/or \Chocolate{Visual studio code} ({\it aka} VSCode) to developp Python programs.
+      
+    \end{itemize}
+    \end{tcolorbox} 
 \end{frame}
 %===============================================================================
 
