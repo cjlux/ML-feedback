@@ -1,4 +1,9 @@
 *.aux
+*.log  
+*.toc
+*.nav  
+*.snm  
+*.out  
 models/
 weights/
 # Byte-compiled / optimized / DLL files

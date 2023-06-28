@@ -468,18 +468,19 @@ Common NN architectures:
 %=================================== 17 ========================================
 \begin{frame}{PVE: simple to create \& use}
   
-  \begin{tcolorbox}[title=with {\bf conda}]
+  \begin{tcolorbox}[add to width=.7cm, title=with {\bf conda}]
     \begin{itemize}
-    \item <1-> Download \& install \href{https://docs.conda.io/en/latest/miniconda.html}{miniconda}
-    \item <2-> \command{conda create -n pyml python=3.8} $\leadsto$ {\small creates the \DarkRed{\boldtt{pyml}} PVE }
-    \item <3-> \command{conda activate pyml} $\leadsto$ {\small activates the \DarkRed{\boldtt{pyml}} PVE }
-    \item <4-> \command{conda install <module>} $\leadsto$ {\small installs a module}\\
-      \command{pip install <module>}       
+    \item <1-> Download \& install \href{https://docs.conda.io/en/latest/miniconda.html}{miniconda} for your OS.
+    \item <2-> \command{\$ conda create -n pyml python=3.8} $\leadsto$ {\small creates the \DarkRed{\boldtt{pyml}} PVE}
+    \item <3-> \command{\$ conda activate pyml} $\leadsto$ {\small activates the \DarkRed{\boldtt{pyml}} PVE }
+    \item <4-> \command{(pyml) \$ conda install <module>} or \command{(pyml) \$ pip install <module>}\\
+      $\leadsto$ {\small installs a module for the \DarkRed{\boldtt{pyml}} PVE}\\
+      $\leadsto$ {\small note the path prefix \command{(pyml)} showing the activated PVE}
     \end{itemize}
   \end{tcolorbox}    
 
   \visible<5->{
-  \begin{tcolorbox}[title=advantages / disadvantages]
+  \begin{tcolorbox}[add to width=.7cm, title=advantages / disadvantages]
     \visible<5->{\dSmiley[1.][green!60!white] The version of Python in a conda PVE can be $\neq$ version of the interpreter that comes with the OS installation\\[1mm]}
     \visible<6->{\dSmiley[1.][green!60!white] Some modules installed with \Chocolate{conda} can be more performant (numpy with MKL)\\}
     \visible<7->{\dSadey[1.][red!60!white] \Chocolate{conda install} and \Chocolate{pip install} can be conflicting...}
@@ -491,13 +492,15 @@ Common NN architectures:
 %=================================== 18 ========================================
 \begin{frame}{PVE: simple to create \& use}
   
-  \begin{tcolorbox}[title=with Python {\bf env}]
+  \begin{tcolorbox}[add to width=.7cm, title=with the {\bf venv} module]
     
     \begin{itemize}
-    \item <1-> Install the \href{https://docs.python.org/3/library/venv.html}{venv} Python module
-    \item <2-> \command{python -m venv pyml} $\leadsto$ {\small creates the \DarkRed{\boldtt{pyml}} PVE }
-    \item <3-> \command{source ./pyml/bin/activate} $\leadsto$ {\small activates the \DarkRed{\boldtt{pyml}} PVE }
-    \item <4-> \command{pip install <module>} $\leadsto$ {\small installs a module}
+    \item <1-> \command{\$ pip install venv} $\leadsto$ {\small Installs the \href{https://docs.python.org/3/library/venv.html}{venv} Python module}
+    \item <2-> \command{\$ python -m venv pyml} $\leadsto$ {\small creates the PVE named \DarkRed{\boldtt{pyml}}}
+    \item <3-> \command{\$ source ./pyml/bin/activate} $\leadsto$ {\small activates the \DarkRed{\boldtt{pyml}} PVE }
+    \item <4-> \command{(pyml) \$ pip install <module>}\\
+      $\leadsto$ {\small installs a module for the \DarkRed{\boldtt{pyml}} PVE}\\
+      $\leadsto$ {\small note the path prefix \command{(pyml)} showing the activated PVE}
     \end{itemize}
     
   \end{tcolorbox}    
@@ -521,6 +524,7 @@ Common NN architectures:
     \item <2-> \Chocolate{Git} repository (GitHub, GitLab...) for storing, sharing \& versionning the project files
     \item <3-> \Chocolate{requirement.txt} to install the Python modules in the required version for each project
     \item <4-> \Chocolate{Jupyter notebook} and/or \Chocolate{Visual studio code} ({\it aka} VSCode) to developp Python programs.
+    \item <5-> Like many IDEs \Chocolate{VSCode} is aware of PVEs.
       
     \end{itemize}
     \end{tcolorbox} 
